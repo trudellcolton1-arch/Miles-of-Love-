@@ -22,7 +22,7 @@ export const site = {
     { days: "Sunday", time: "Closed" },
   ],
   social: {
-    facebook: "https://facebook.com",
+    facebook: "https://www.facebook.com/share/1bVYeWwFev/?mibextid=wwXIfr",
     instagram: "https://instagram.com",
     linkedin: "https://linkedin.com",
   },
