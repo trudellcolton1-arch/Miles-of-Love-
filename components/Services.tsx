@@ -1,29 +1,51 @@
 import { BookOpenCheck, Check, Compass, ShieldCheck } from "lucide-react";
 import Reveal from "./Reveal";
 
-const services = [
+type Point = { label?: string; text: string };
+
+type Service = {
+  icon: typeof Compass;
+  accent: string;
+  title: string;
+  lead: string;
+  points: Point[];
+};
+
+const services: Service[] = [
   {
     icon: Compass,
     accent: "from-teal-400 to-teal-600",
     title: "IEP Guidance",
     lead: "Understand every page of your child's IEP — without the jargon.",
     points: [
-      "Plain-language explanations of terminology",
-      "Meeting preparation so you walk in ready",
-      "Careful review of documents and evaluations",
-      "A clear strategy built around your child",
+      { text: "Plain-language explanations of terminology" },
+      { text: "Meeting preparation so you walk in ready" },
+      { text: "Careful review of documents and evaluations" },
+      { text: "A clear strategy built around your child" },
     ],
   },
   {
     icon: ShieldCheck,
     accent: "from-sky-400 to-sky-600",
     title: "IEP Advocacy",
-    lead: "A calm, experienced voice beside you in every meeting.",
+    lead: "I provide calm, experienced support so you feel prepared, confident, and heard in every meeting.",
     points: [
-      "We attend IEP meetings with you",
-      "Protect your student's rights",
-      "Ensure schools provide appropriate services",
-      "Help you communicate clearly and confidently",
+      {
+        label: "Preparation before the meeting",
+        text: "I review documents, clarify goals, and help you feel ready and confident.",
+      },
+      {
+        label: "Support after the meeting",
+        text: "I help you understand decisions, next steps, and ensure follow-through.",
+      },
+      {
+        label: "Clear communication with the school",
+        text: "When needed, I communicate with the school on your behalf to keep things moving.",
+      },
+      {
+        label: "Focused on what matters most",
+        text: "I advocate to ensure your student's needs are met and your voice as a parent is always heard.",
+      },
     ],
   },
   {
@@ -32,10 +54,10 @@ const services = [
     title: "Personalized Tutoring",
     lead: "One-on-one, autism-friendly instruction that builds real confidence.",
     points: [
-      "Individual learning plans for each student",
-      "Autism-friendly, structured teaching",
-      "Strategies that work with diverse learning needs",
-      "Academic confidence that carries into class",
+      { text: "Individual learning plans for each student" },
+      { text: "Autism-friendly, structured teaching" },
+      { text: "Strategies that work with diverse learning needs" },
+      { text: "Academic confidence that carries into class" },
     ],
   },
 ];
@@ -82,12 +104,22 @@ export default function Services() {
                 </p>
                 <ul className="mt-6 space-y-3 border-t border-navy-100/80 pt-6 dark:border-white/10">
                   {s.points.map((p) => (
-                    <li key={p} className="flex items-start gap-2.5 text-sm text-ink/80 dark:text-navy-100/80">
+                    <li
+                      key={p.label ?? p.text}
+                      className="flex items-start gap-2.5 text-sm text-ink/80 dark:text-navy-100/80"
+                    >
                       <Check
                         className="mt-0.5 h-4 w-4 shrink-0 text-teal-500 dark:text-teal-300"
                         aria-hidden="true"
                       />
-                      {p}
+                      <span>
+                        {p.label && (
+                          <strong className="font-semibold text-navy-900 dark:text-white">
+                            {p.label}:{" "}
+                          </strong>
+                        )}
+                        {p.text}
+                      </span>
                     </li>
                   ))}
                 </ul>
