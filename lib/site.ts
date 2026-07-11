@@ -10,8 +10,8 @@ export const site = {
   // Placeholder domain — replace with the real domain once purchased.
   url: "https://milesoflove925.com",
   email: "milesoflove925@gmail.com",
-  phone: "(555) 925-0925",
-  phoneHref: "tel:+15559250925",
+  phone: "(945) 666-9207",
+  phoneHref: "tel:+19456669207",
   // Calendly scheduling page. The calendar is embedded in the #book
   // section and every "Book a Free Consultation" button scrolls there.
   calendlyUrl: "https://calendly.com/milesoflove925",
