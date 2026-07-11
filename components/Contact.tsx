@@ -135,11 +135,8 @@ export default function Contact() {
                     Hours
                   </dt>
                   <dd className="text-ink/75 dark:text-navy-100/75">
-                    {site.hours.map((h) => (
-                      <span key={h.days} className="block">
-                        {h.days}: {h.time}
-                      </span>
-                    ))}
+                    {site.hours} &mdash; book a free consultation and
+                    we&apos;ll find a time that works for your family.
                   </dd>
                 </div>
               </div>

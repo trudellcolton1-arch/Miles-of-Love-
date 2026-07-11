@@ -16,11 +16,7 @@ export const site = {
   // one-click booking on every "Book a Free Consultation" button.
   // While empty, those buttons smoothly scroll to the contact form.
   calendlyUrl: "",
-  hours: [
-    { days: "Monday – Friday", time: "9:00 AM – 5:00 PM" },
-    { days: "Saturday", time: "By appointment" },
-    { days: "Sunday", time: "Closed" },
-  ],
+  hours: "By appointment only",
   social: {
     facebook: "https://www.facebook.com/share/1bVYeWwFev/?mibextid=wwXIfr",
     instagram: "https://instagram.com",

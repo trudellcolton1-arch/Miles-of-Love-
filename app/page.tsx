@@ -27,14 +27,6 @@ const businessSchema = {
     { "@type": "State", name: "Iowa" },
     { "@type": "Country", name: "United States" },
   ],
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "09:00",
-      closes: "17:00",
-    },
-  ],
   makesOffer: [
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "IEP Guidance" } },
     { "@type": "Offer", itemOffered: { "@type": "Service", name: "IEP Advocacy" } },
