@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://milesoflove925.com/sitemap.xml
