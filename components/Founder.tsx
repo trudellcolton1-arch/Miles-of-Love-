@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { GraduationCap, HeartHandshake, Landmark, Quote } from "lucide-react";
 import Reveal from "./Reveal";
 
@@ -37,8 +38,32 @@ export default function Founder() {
             </h2>
           </Reveal>
 
-          <Reveal delay={0.16}>
-            <figure className="card relative mt-8 overflow-hidden p-8">
+          <Reveal delay={0.14}>
+            <div className="relative mt-8 max-w-sm">
+              <div className="overflow-hidden rounded-[2rem] shadow-lift ring-1 ring-navy-900/10 dark:ring-white/10">
+                <Image
+                  src="/images/founder.png"
+                  alt="Shauniesa Sisk, founder of Miles of Love 9-2-5, smiling warmly"
+                  width={1024}
+                  height={1024}
+                  loading="lazy"
+                  className="h-auto w-full"
+                />
+              </div>
+              <div className="glass absolute -bottom-4 left-4 rounded-2xl px-5 py-3 shadow-soft">
+                <p className="font-heading font-bold text-navy-900 dark:text-white">
+                  Shauniesa Sisk
+                </p>
+                <p className="text-xs font-medium text-ink/70 dark:text-navy-100/70">
+                  Founder &middot; Special-Education Consultant &amp; IEP
+                  Advocate
+                </p>
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal delay={0.2}>
+            <figure className="card relative mt-10 overflow-hidden p-8">
               <Quote
                 aria-hidden="true"
                 className="absolute -right-3 -top-3 h-24 w-24 rotate-12 text-teal-100 dark:text-teal-500/10"
@@ -47,7 +72,7 @@ export default function Founder() {
                 Turning confusion into clarity, and advocacy into action.
               </blockquote>
               <figcaption className="relative mt-4 text-sm text-ink/60 dark:text-navy-100/60">
-                Shauniesa Sisk &mdash; Founder, Miles of Love 9-2-5
+                Shauniesa&apos;s promise to every family
               </figcaption>
             </figure>
           </Reveal>
