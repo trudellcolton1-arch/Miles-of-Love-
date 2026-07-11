@@ -11,6 +11,7 @@ const quickLinks = [
   { href: "#process", label: "How It Works" },
   { href: "#testimonials", label: "Testimonials" },
   { href: "#faq", label: "FAQ" },
+  { href: "#book", label: "Book a Consultation" },
   { href: "#contact", label: "Contact" },
 ];
 

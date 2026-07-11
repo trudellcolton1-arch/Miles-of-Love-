@@ -8,6 +8,7 @@ import WhyUs from "@/components/WhyUs";
 import Process from "@/components/Process";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
+import Booking from "@/components/Booking";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { faqs } from "@/lib/faqs";
@@ -75,6 +76,7 @@ export default function Home() {
         <Process />
         <Testimonials />
         <FAQ />
+        <Booking />
         <Contact />
       </main>
       <Footer />

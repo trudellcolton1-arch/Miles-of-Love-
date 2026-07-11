@@ -12,10 +12,9 @@ export const site = {
   email: "milesoflove925@gmail.com",
   phone: "(555) 925-0925",
   phoneHref: "tel:+15559250925",
-  // Paste a Calendly (or similar) scheduling link here to activate
-  // one-click booking on every "Book a Free Consultation" button.
-  // While empty, those buttons smoothly scroll to the contact form.
-  calendlyUrl: "",
+  // Calendly scheduling page. The calendar is embedded in the #book
+  // section and every "Book a Free Consultation" button scrolls there.
+  calendlyUrl: "https://calendly.com/milesoflove925",
   hours: "By appointment only",
   social: {
     facebook: "https://www.facebook.com/share/1bVYeWwFev/?mibextid=wwXIfr",
@@ -24,6 +23,10 @@ export const site = {
   },
 } as const;
 
-/** Href used by every booking CTA. */
-export const bookingHref = site.calendlyUrl || "#contact";
-export const bookingIsExternal = Boolean(site.calendlyUrl);
+/**
+ * Href used by every booking CTA. With Calendly configured, buttons
+ * scroll to the embedded calendar in the #book section; without it,
+ * they fall back to the contact form.
+ */
+export const bookingHref = site.calendlyUrl ? "#book" : "#contact";
+export const bookingIsExternal = false;
