@@ -13,7 +13,7 @@ export const faqs = [
   },
   {
     q: "How do I schedule a consultation?",
-    a: "The first consultation is free and takes about 30 minutes. Click any 'Book a Free Consultation' button on this page, or send us a message through the contact form and we'll reach out within one business day to find a time that works for you.",
+    a: "The first consultation is free and takes about 30 minutes. Click any 'Book a Free Consultation' button to pick an open time on our calendar — you'll get an instant email confirmation with all the details. Prefer to write first? Send a message through the contact form and we'll reply within one business day.",
   },
   {
     q: "How much does advocacy cost?",

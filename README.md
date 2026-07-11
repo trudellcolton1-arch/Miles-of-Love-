@@ -44,9 +44,8 @@ npm run build    # static export to ./out
 
 1. **Phone** — currently a placeholder (`(555) 925-0925`). The email is
    real: `milesoflove925@gmail.com`.
-2. **Calendly** — paste a scheduling link into `calendlyUrl` and every
-   "Book a Free Consultation" button becomes a one-click booking link.
-   While empty, those buttons scroll to the contact form.
+2. **Calendly** — done: `calendly.com/milesoflove925` is embedded in the
+   #book section and every "Book a Free Consultation" button scrolls to it.
 3. **Domain** — replace `https://milesoflove925.com` in `lib/site.ts`,
    `public/robots.txt`, and `public/sitemap.xml` with the real domain.
 4. **Social links** — currently point at the platform homepages.
