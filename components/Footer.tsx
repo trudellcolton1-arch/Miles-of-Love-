@@ -6,6 +6,7 @@ import { site } from "@/lib/site";
 
 const quickLinks = [
   { href: "#story", label: "Our Story" },
+  { href: "#founder", label: "Meet the Founder" },
   { href: "#why-us", label: "Why Us" },
   { href: "#process", label: "How It Works" },
   { href: "#testimonials", label: "Testimonials" },

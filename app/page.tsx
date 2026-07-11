@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Story from "@/components/Story";
+import Founder from "@/components/Founder";
 import Services from "@/components/Services";
 import Stats from "@/components/Stats";
 import WhyUs from "@/components/WhyUs";
@@ -22,6 +23,11 @@ const businessSchema = {
   telephone: site.phone,
   email: site.email,
   slogan: "Where Support Goes the Distance",
+  founder: {
+    "@type": "Person",
+    name: "Shauniesa Sisk",
+    jobTitle: "Founder, Special-Education Consultant & IEP Advocate",
+  },
   areaServed: [
     { "@type": "City", name: "Dallas" },
     { "@type": "State", name: "Iowa" },
@@ -62,6 +68,7 @@ export default function Home() {
       <main id="main">
         <Hero />
         <Story />
+        <Founder />
         <Services />
         <Stats />
         <WhyUs />
