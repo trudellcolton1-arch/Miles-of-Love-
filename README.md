@@ -42,8 +42,7 @@ npm run build    # static export to ./out
 
 ## Things to update before launch (all in `lib/site.ts`)
 
-1. **Phone** — currently a placeholder (`(555) 925-0925`). The email is
-   real: `milesoflove925@gmail.com`.
+1. **Phone & email** — done: `(945) 666-9207`, `milesoflove925@gmail.com`.
 2. **Calendly** — done: `calendly.com/milesoflove925` is embedded in the
    #book section and every "Book a Free Consultation" button scrolls to it.
 3. **Domain** — replace `https://milesoflove925.com` in `lib/site.ts`,
