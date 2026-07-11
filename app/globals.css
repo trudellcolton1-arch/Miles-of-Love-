@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  @apply bg-cream text-ink antialiased font-body;
+}
+
+.dark body {
+  @apply bg-navy-950 text-navy-100;
+}
+
+::selection {
+  @apply bg-gold-300/60 text-navy-900;
+}
+
+/* Accessible focus ring everywhere */
+:focus-visible {
+  outline: 3px solid theme("colors.gold.400");
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@layer components {
+/* Skip link */
+.skip-link {
+  @apply fixed left-4 top-4 z-[100] -translate-y-24 rounded-full bg-navy-900 px-5 py-3 text-sm font-semibold text-white shadow-lift transition-transform;
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* Glassmorphism helper */
+.glass {
+  @apply border border-white/40 bg-white/70 backdrop-blur-xl;
+}
+.dark .glass {
+  @apply border-white/10 bg-navy-900/70;
+}
+
+/* Section shell */
+.section-pad {
+  @apply px-5 py-20 sm:px-8 md:py-28;
+}
+.container-tight {
+  @apply mx-auto w-full max-w-6xl;
+}
+
+/* Headings */
+.h-display {
+  @apply font-heading font-bold tracking-tight text-navy-900 dark:text-white;
+}
+
+.eyebrow {
+  @apply inline-flex items-center gap-2 rounded-full border border-teal-300/50 bg-teal-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-teal-700 dark:border-teal-500/30 dark:bg-teal-900/40 dark:text-teal-200;
+}
+
+/* Buttons */
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-base font-semibold transition-all duration-300 focus-visible:outline-gold-400;
+}
+.btn-primary {
+  @apply btn bg-gold-400 text-navy-950 shadow-glow hover:-translate-y-0.5 hover:bg-gold-300 hover:shadow-lift active:translate-y-0;
+}
+.btn-secondary {
+  @apply btn border-2 border-navy-200 bg-white/60 text-navy-800 backdrop-blur hover:-translate-y-0.5 hover:border-teal-400 hover:text-teal-700 dark:border-white/20 dark:bg-white/5 dark:text-white dark:hover:border-teal-300 dark:hover:text-teal-200;
+}
+.btn-ghost-light {
+  @apply btn border-2 border-white/40 bg-white/10 text-white backdrop-blur hover:bg-white/20;
+}
+
+/* Card */
+.card {
+  @apply rounded-3xl border border-navy-100/80 bg-white shadow-soft transition-all duration-300 dark:border-white/10 dark:bg-navy-900;
+}
+.card-hover {
+  @apply hover:-translate-y-1.5 hover:shadow-lift;
+}
+}
