@@ -9,7 +9,7 @@ export const site = {
   slogan: "Where structure meets heart",
   // Placeholder domain — replace with the real domain once purchased.
   url: "https://milesoflove925.com",
-  email: "hello@milesoflove925.com",
+  email: "milesoflove925@gmail.com",
   phone: "(555) 925-0925",
   phoneHref: "tel:+15559250925",
   // Paste a Calendly (or similar) scheduling link here to activate

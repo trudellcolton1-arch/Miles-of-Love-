@@ -42,8 +42,8 @@ npm run build    # static export to ./out
 
 ## Things to update before launch (all in `lib/site.ts`)
 
-1. **Phone & email** — currently placeholders (`(555) 925-0925`,
-   `hello@milesoflove925.com`).
+1. **Phone** — currently a placeholder (`(555) 925-0925`). The email is
+   real: `milesoflove925@gmail.com`.
 2. **Calendly** — paste a scheduling link into `calendlyUrl` and every
    "Book a Free Consultation" button becomes a one-click booking link.
    While empty, those buttons scroll to the contact form.
